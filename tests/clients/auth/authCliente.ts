@@ -1,5 +1,4 @@
 import fetch from "node-fetch";
-import { buildQuery } from "../../utils/buildQuery";
 import { IAuthValid } from "./interfaces";
 import { config } from "../../config/index";
 
