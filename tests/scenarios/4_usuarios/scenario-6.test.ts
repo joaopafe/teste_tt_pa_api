@@ -1,4 +1,4 @@
-describe("Cenário 6 - Cadastro de usuário de suporte (POST /cadastro)", () => {
+describe.skip("Cenário 6 - Cadastro de usuário de suporte (POST /cadastro)", () => {
   test("6.1 - Cadastrar usuário de suporte por meio de requisição válida", () => {});
 
   test("6.2 - Retornar erro para cadastro sem autenticação", () => {});

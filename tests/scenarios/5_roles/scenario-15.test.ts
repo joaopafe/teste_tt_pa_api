@@ -1,4 +1,4 @@
-describe("Cenário 15 - Alteração de role específica por ID (PUT /roles/{id})", () => {
+describe.skip("Cenário 15 - Alteração de role específica por ID (PUT /roles/{id})", () => {
   test("15.1 - Alterar roles de por meio de requisição válida", () => {});
 
   test("15.2 - Retornar erro para alteração de roles sem autenticação", () => {});

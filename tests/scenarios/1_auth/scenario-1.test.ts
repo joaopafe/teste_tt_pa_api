@@ -1,5 +1,5 @@
 import { config } from "../../config/index";
-import { AuthClient } from "../../clients/auth/authCliente";
+import { AuthClient } from "../../clients/auth/authClient";
 import { authSchema, authInvalidSchema } from "../../schemas/authSchema";
 
 const EMAIL = process.env.EMAIL as string;

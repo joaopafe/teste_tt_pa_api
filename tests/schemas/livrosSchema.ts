@@ -8,3 +8,7 @@ export const livroSchema = yup.object({
 });
 
 export const livrosSchema = yup.array().of(livroSchema);
+
+export const livrosInvalidSchema = yup.object({
+  error: yup.string().required(),
+});

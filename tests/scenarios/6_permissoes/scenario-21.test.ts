@@ -1,4 +1,4 @@
-describe("Cenário 21 - Remoção de permissão cadastrada (DELETE /permissoes/{id})", () => {
+describe.skip("Cenário 21 - Remoção de permissão cadastrada (DELETE /permissoes/{id})", () => {
   test("21.1 - Deletar permissão por meio de requisição válida", () => {});
 
   test("21.2 - Retornar erro para remoção de permissão sem autenticação", () => {});

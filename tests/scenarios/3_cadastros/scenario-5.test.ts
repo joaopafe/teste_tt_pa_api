@@ -1,4 +1,4 @@
-describe("Cenário 5 - Cadastro de usuário (POST /cadastro)", () => {
+describe.skip("Cenário 5 - Cadastro de usuário (POST /cadastro)", () => {
   test("5.1 - Cadastrar usuário por meio de requisição válida", () => {});
 
   test("5.2 - Retornar erro de formato para cadastro sem todos os parâmetros obrigatórios", () => {});

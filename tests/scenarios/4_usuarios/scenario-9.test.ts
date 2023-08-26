@@ -1,4 +1,4 @@
-describe("Cenário 9 - Listagem de usuário específico por ID (GET /usuarios/{id})", () => {
+describe.skip("Cenário 9 - Listagem de usuário específico por ID (GET /usuarios/{id})", () => {
   test("9.1 - Listar usuário específico para id cadastrado", () => {});
 
   test("9.2 - Retornar erro para listagem de usuário sem autenticação", () => {});

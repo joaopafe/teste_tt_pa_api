@@ -1,4 +1,4 @@
-describe("Cenário 12 - Cadastro de role (POST /roles)", () => {
+describe.skip("Cenário 12 - Cadastro de role (POST /roles)", () => {
   test("12.1 - Cadastrar role por meio de requisição válida", () => {});
 
   test("12.2 - Retornar erro para cadastro sem autenticação", () => {});

@@ -1,4 +1,4 @@
-describe("Cenário 20 - Alterar permissão específica por meio de ID (PUT /permissoes/{id})", () => {
+describe.skip("Cenário 20 - Alterar permissão específica por meio de ID (PUT /permissoes/{id})", () => {
   test("20.1 - Alterar permissão específica por meio de requisição válida", () => {});
 
   test("20.2 - Retornar erro para alteração de permissão específica sem autenticação", () => {});

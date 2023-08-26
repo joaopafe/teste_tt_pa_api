@@ -1,4 +1,4 @@
-describe("Cenário 10 - Alteração de cadastro de usuário específico (PUT /usuarios/{id})", () => {
+describe.skip("Cenário 10 - Alteração de cadastro de usuário específico (PUT /usuarios/{id})", () => {
   test("10.1 - Alterar usuário específico por meio de requisição válida", () => {});
 
   test("10.2 - Retornar erro para alteração de usuário sem autenticação", () => {});
