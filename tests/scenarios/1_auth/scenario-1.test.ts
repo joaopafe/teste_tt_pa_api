@@ -75,11 +75,11 @@ describe("Cenário 1 - Obtenção de autenticação (POST /auth/login)", () => {
       senha: SENHA,
     });
 
-    expect(response.status).toEqual(200);
+    expect(response.status).toEqual(401);
 
     const data = await response.json();
 
-    await authSchema.validate(data);
+    await authInvalidSchema.validate(data);
   });
 
   test("1.6 - Obter token por meio de requisição com senha em uppercase", async () => {
