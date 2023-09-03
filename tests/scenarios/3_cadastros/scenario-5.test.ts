@@ -71,7 +71,7 @@ describe("Cenário 5 - Cadastro de usuário (POST /cadastro)", () => {
     await cadastroInvalidSchema.validate(data);
   });
 
-  test("5.4 - Retornar erro de formato para cadastro com senha com menos de 7 caracteres", async () => {
+  test("5.4 - Retornar erro de formato para cadastro com senha com menos de 8 caracteres", async () => {
     const nome = process.env.NOME_CADASTRADO as string;
     const email = process.env.EMAIL_CADASTRADO as string;
     const senha = config.cadastroConfig.senhaInvalida1;
@@ -129,5 +129,21 @@ describe("Cenário 5 - Cadastro de usuário (POST /cadastro)", () => {
     const data = await response.json();
 
     await cadastroInvalidSchema.validate(data);
+  });
+
+  test("5.7 - Retornar erro de requisição para usuário já cadastrado", async () => {
+    const nome = process.env.NOME_CADASTRADO as string;
+    const email = process.env.EMAIL_CADASTRADO as string;
+    const senha = process.env.SENHA_CADASTRADA as string;
+    const aceitouTermos = true;
+
+    const response = await cadastroClient.postUser({
+      nome,
+      email,
+      senha,
+      aceitouTermos,
+    });
+
+    expect(response.status).toEqual(400);
   });
 });
