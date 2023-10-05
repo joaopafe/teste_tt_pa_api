@@ -10,7 +10,7 @@ const cadastroClient = new CadastroClient();
 describe("Cenário 5 - Cadastro de usuário (POST /cadastro)", () => {
   test("5.1 - Cadastrar usuário por meio de requisição válida", async () => {
     const nome = process.env.NOME_CADASTRADO as string;
-    const email = process.env.EMAIL_CADASTRADO as string;
+    const email = (process.env.EMAIL_CADASTRADO as string) + Date.now();
     const senha = process.env.SENHA_CADASTRADA as string;
     const aceitouTermos = true;
 
