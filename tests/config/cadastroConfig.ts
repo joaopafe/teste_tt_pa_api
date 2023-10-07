@@ -9,3 +9,23 @@ export const cadastroConfig = {
   perguntaSecreta2: "Majin Boo",
   perguntaSecreta3: "Lasanha Bolonhesa",
 };
+
+export const recuperacaoSenhaConfig = {
+  emailValido: "testeResetPassword@teste.com",
+  senhaValida1: "t1m3TUrqU3s@",
+  senhaValida2: "T1m3tuRqu&s@",
+  nomeValido: "Teste de recuperação de senha",
+  areaAtuacaoValida: "UX",
+  estadoValido: "SP",
+  aceitouTermosValido: true,
+  roleValido: "64baf373b7ca9eabfeea85f6",
+  perguntaSecreta1Valida: "Morcego",
+  perguntaSecreta2Valida: "Marimbomdo",
+  perguntaSecreta3Valida: "Pizza de queijo",
+  emailInvalido: "testeresetpassword@testett.com",
+  senhaInvalida1: "123456",
+  senhaInvalida2: "timeturquesa",
+  perguntaSecreta1Invalida: "cavalo",
+  perguntaSecreta2Invalida: "grandao",
+  perguntaSecreta3Invalida: "coxinha",
+};
